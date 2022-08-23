@@ -35,10 +35,11 @@ section {
     display: flex;
     flex-direction: column;
     h1 {
+       /* Style for "ENJOY A SA" */
         width: 1287px;
         height: 447px;
         color: #000928;
-        font-family: "Poppins-Black";
+        font-family: "Poppins  Black";
         font-size: 262px;
         font-weight: 400;
         font-style: normal;
@@ -46,8 +47,5 @@ section {
         line-height: 255.7px;
         text-align: left;
         text-transform: uppercase;
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: normal;
     }
 }
