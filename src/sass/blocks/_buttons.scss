@@ -1,32 +1,35 @@
 .button {
-   /* Style for "Shape" */
     width: 430px;
     height: 102px;
+    padding:20px 0 0 0 ;
     background-color: #2372d5;
-   
     cursor: pointer;
     &:active {
       box-shadow: 0 0 3px rgb(163 0 0 / 50%);
     }
 
     span {
-       /* Style for "READ MORE" */
-    width: 222px;
-    height: 29px;
-    color: #ffffff;
-    font-family: "Poppins - Extra Bold";
-    font-size: 39px;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 62.68px;
-    text-align: left;
-    text-transform: uppercase;
-    /* Text style for "READ MORE" */
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
-    
+      width: 222px;
+      height: 29px;
+      
+      a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: "Poppins - Extra Bold";
+        font-size: 39px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 62.68px;
+        text-align: center;
+        text-transform: uppercase;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+      }
     }
     &:hover {
       box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.25);
