@@ -1,0 +1,31 @@
+nav {
+    display: flex;
+    width: 100%;
+    margin-top: 135px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 1346px;
+    height: 30px;
+    
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    a {
+        text-decoration: none;
+        color: #060608;
+        font-family: Poppins;
+        font-size: 40px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 36.63px;
+        text-align: left;
+        text-transform: uppercase;
+        
+
+    }
+    }
