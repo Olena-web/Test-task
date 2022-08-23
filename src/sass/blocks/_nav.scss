@@ -1,8 +1,35 @@
 nav {
-    display: flex;
     width: 100%;
     margin-top: 135px;
-}
+    display: flex;
+    align-items: flex-end;
+    .logo {
+        position: relative;
+        z-index: 10;
+        left: 82px;
+    }
+    .hamburger {
+        cursor: pointer;
+        width: 73px;
+        height: 57px;
+        margin-left: 11rem;
+        
+        span {
+            display: block;
+            width: 100%;
+            height: 12px;
+            margin: 6px auto;
+            transition: all 0.3s ease-in-out;
+            background-color: black;
+          }
+        
+          span:hover {
+            height: 10px;
+            filter: invert(15%) sepia(100%) saturate(5130%) hue-rotate(334deg) brightness(88%) contrast(104%);
+          }
+        }
+    }
+
 
 .navbar {
     display: flex;
@@ -10,7 +37,6 @@ nav {
     list-style-type: none;
     width: 1346px;
     height: 30px;
-    
     font-style: normal;
     letter-spacing: normal;
     line-height: normal;
@@ -25,7 +51,6 @@ nav {
         line-height: 36.63px;
         text-align: left;
         text-transform: uppercase;
-        
-
     }
+    
     }
