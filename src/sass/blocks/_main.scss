@@ -1,7 +1,7 @@
 :root {
   --font-normal:  "Poppins", sans-serif;
-  --font-bold:    "Poppins  Black", sans-serif;
-  --font-extra-bold: "Poppins  Extra Bold", sans-serif;
+  --font-bold:    "Poppins - Black", sans-serif;
+  --font-extra-bold: "Poppins - Extra Bold", sans-serif;
   --color-dark:  #000928;
   --color-light: #ffffff;
   --color-blue: #2372d5;
@@ -37,7 +37,7 @@ aside {
     object-fit: cover;
   }
   .logo {
-    position: fixed;
+    position: absolute;
     top: 7rem;
     left: 24rem;
   }
@@ -50,7 +50,7 @@ section {
     width: 1287px;
     height: 447px;
     color: var(--color-dark);
-    font-family: var(--font-bold);
+    font-family: var(--font-extra-bold);
     font-size: 262px;
     font-weight: 400;
     font-style: normal;
