@@ -1,10 +1,15 @@
 .design_1 {
-    margin-top: 9.5rem;
-    margin-right: 25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .circle {
-        margin-right: 28rem;
-    }
+  margin-top: 9.5rem;
+  margin-right: 11rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .circle {
+    margin-right: 28rem;
+  }
+}
+.design_2 {
+  margin-right: 38rem;
+  display: flex;
+  flex-direction: row-reverse;
 }

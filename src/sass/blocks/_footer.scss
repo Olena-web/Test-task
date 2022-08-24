@@ -1,9 +1,10 @@
 footer {
   display:flex;
   flex-direction: row-reverse;
-  bottom: 0;
-}
+  
+  }
 .social-media ul {
+  margin-top: 9rem;
   list-style-type: none;
   display:flex;
   justify-content:space-between;
@@ -12,7 +13,7 @@ footer {
   margin-left:auto;
   margin-right:auto;
   li {
-    margin-right:10px;
+    margin-right:25px;
     cursor:pointer;
     &:hover {
       filter: invert(15%) sepia(100%) saturate(5130%) hue-rotate(334deg) brightness(88%) contrast(104%);
