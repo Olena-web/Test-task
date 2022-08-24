@@ -17,5 +17,8 @@
   "browserslist": [
     "last 2 Chrome versions",
     "IE 11"
-  ]
+  ],
+  "dependencies": {
+    "eslint": "^8.22.0"
+  }
 }

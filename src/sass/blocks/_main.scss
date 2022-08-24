@@ -1,50 +1,87 @@
+:root {
+  --font-normal:  Poppins, sans-serif;
+  --font-bold:    "Poppins - Black", sans-serif;
+  --font-extra-bold: "Poppins - Extra Bold", sans-serif;
+  --color-dark:  #000928;
+  --color-light: #ffffff;
+  --color-blue: #2372d5;
+  --color-red: rgb(163 0 0 / 50%);
+  --color-darkgray: rgb(169, 169, 169);
+  --color-lightgray: rgb(211, 211, 211);
+  --shadow: rgba(0, 0, 0, 0.25);
+  --shadow-modal: rgba(0, 0, 0, 0.5);
+
+}
+
 body {
-    display: grid;
-    grid-template-columns: 1400px 1fr;
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1400px 1fr;
+  justify-content: space-between;
 
 }
 header {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
+  
+  
 }
 main {
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+  padding: 0 4rem;
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background-image: url(./../assets/Corner.svg);
+  background-position: right 444% top 211%;
+  background-repeat: no-repeat;
 }
 aside {
-    min-width: 800px;
-    height: 100vh;
-    img {
-        position: relative;
-        left: -14rem;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .logo {
-        position: fixed;
-        top: 7rem;
-        left: 24rem;
-    }
-    
+  min-width: 800px;
+  height: 100vh;
+  img {
+    position: relative;
+    left: -14rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .logo {
+    position: absolute;
+    top: 7rem;
+    left: 25rem;
+  }
+  
 }
 section {
-    display: flex;
-    flex-direction: column;
-    h1 {
-        width: 1287px;
-        height: 447px;
-        color: #000928;
-        font-family: "Poppins  Black";
-        font-size: 262px;
-        font-weight: 400;
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: 255.7px;
-        text-align: left;
-        text-transform: uppercase;
-    }
+  display: flex;
+  flex-direction: column;
+  h1 {
+    margin-top: 7rem;
+    width: 1400px;
+    height: 447px;
+    color: var(--color-dark);
+    font-family: var(--font-bold);
+    font-size: 238px;
+    font-weight: 900;
+    line-height: 255.7px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .description {
+    margin-top: 5rem;
+    margin-left: 1.5rem;
+    width: 1742px;
+    height: 151px;
+    overflow-y: hidden;
+    color: var(--color-dark);
+    font-family: var(--font-normal);
+    font-size: 56px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 90.84px;
+    text-align: left;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+  }
 }

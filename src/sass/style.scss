@@ -5,9 +5,11 @@
 @import 'blocks/nav';
 @import 'blocks/buttons';
 @import 'blocks/footer';
+@import 'blocks/modal';
+@import 'blocks/design';
 
 * {
-  font-family: 'Poppins', 'Poppins Black', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
 }

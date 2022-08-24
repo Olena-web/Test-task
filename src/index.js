@@ -1,3 +1,5 @@
+
+import addModal from './js/modal.js';
 class WordCounter {
     constructor(inputText) {
         this.inputText = inputText;
@@ -40,3 +42,4 @@ const render = (event) => {
 }
 
 inputText.addEventListener('count', render);
+addModal();
