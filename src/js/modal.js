@@ -4,13 +4,14 @@ function addModal() {
     const modalBtn = document.querySelector('.hamburger');
     const closeBtn = document.querySelector('.close-button');
 
-    console.log(modalBtn);
+    console.log(closeBtn);
 
     function toggleModal() {
         modal.classList.add('show-modal');
     }
     function removeModal() {
         modal.classList.remove('show-modal');
+        console.log('remove');
     }
 
     modalBtn.addEventListener('click', toggleModal);

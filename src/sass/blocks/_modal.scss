@@ -15,13 +15,12 @@
 
 .modal-content {
 	position: absolute;
-	top: 28%;
-	left: 38%;
+	top: 16%;
+	left: 33%;
 	transition: translate(-50%, -50%);
 	background-color: var(--color-light);
-	padding: 1rem 1.5rem;
 	width: 85rem;
-	height: 62rem;
+	height: 79rem;
 	border-radius: 0.5rem;
 	font-size: 24px;
 }
@@ -29,22 +28,57 @@
 	width: 100%;
 	height: 17rem;
 	background-color: var(--color-blue);
+	.envelope {
+		position: relative;
+		top: -4rem;
+		left: 34rem;
+    pointer-events: none;
+	}
 }
+	.close-button {
+    position: relative;
+    top: 14px;
+    right: 13px;
+		float: right;
+    width: 3.5rem;
+    height:3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    cursor: pointer;
+	}
+	
+	.close-button:hover {
+		transform: scale(1.1);
+	  transition: visibility 0s linear 0s, opacity 0.25s 0s,transform 0.25s; 
+	}
 
-.close-button {
-	float: right;
-	width: 3.5rem;
-	height:3.5rem;
-	line-height: 3.5rem;
-	text-align: center;
-	cursor: pointer;
-	border-radius: 0.25rem;
-	background-color: var(--color-blue);
-}
 
-.close-button:hover {
-	background-color: var(--color-darkgray);
-}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 7.5rem 0 8rem;
+  font-size: 45px;
+  margin-left: 1rem;
+  color: var(--color-blue);
+ #number {
+    height: 8rem;
+    margin-bottom: 1.4rem;
+    }
+ #text {
+    height: 34rem;
+    }
+  #text,
+  #number {
+    width: 101%;
+    border: 3px solid var(--color-blue);
+    }
+  #stat {
+    margin-left: 61rem;
+    margin-top: 1rem;
+    color: var(--color-dark);
+    }
+ }
+
 
 .show-modal {
 	display: block;

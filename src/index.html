@@ -55,15 +55,23 @@
         <div class="modal">
             <div class="modal-content">
                 <div class="modal-header">
-                    <span class="close-button">&times;</span>
-                    <h2>Modal Header</h2>
+                    <div class="close-button">
+                        <img src="assets/Close.png" alt="close">
+                    </div>                  
+                    <div class="envelope">
+                        <img src="assets/Envelop.webp" alt="envelop">
+                    </div>
                 </div>
                 <div class="modal-body">
-                    <p>Some text in the Modal Body</p>
-                    <p>Some other text...</p>
-                    <label for="text">Enter some text below:</label>
-                    <textarea id="text" rows="10" cols="60"></textarea>
-                    <div id="stat">You've written 0 words and 0 characters.</div>
+                        <div class="form">
+                            <form action="#">
+                                <label for="number">Max words count</label>
+                                <input type="number" min="3" max="100" id="number" placeholder="   100">
+                                <label for="text">Type your text</label>
+                                <textarea id="text" rows="10" cols="60" name="message"></textarea>
+                                <div id="stat">0/100</div>
+                            </form>
+                        </div>
                 </div>
             </div>
         </div>

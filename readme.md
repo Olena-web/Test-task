@@ -18,7 +18,7 @@
 
 ### JS Requirements
 
-#### Hamburger icon should open a popup with input and textarea. 
+#### Hamburger icon should open a popup with input and textarea. - done
 #### Create a JS class (strictly ES6 syntax) that will count the number of entered words,  - done
 #### words like "the", "a", "an" will not be taken into account (give the possibility to pass these exceptions as an array during initialization). 
 #### A single word has a space on both sides. Do not allow to enter all other signs or symbols (only letters and spaces).

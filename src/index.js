@@ -37,8 +37,8 @@ const inputText = document.querySelector('#text');
 const statElem = document.querySelector('#stat');
 new WordCounter(inputText);
 const render = (event) => {
-    statElem.innerHTML = `<p>You've written <span class="highlight">${event.detail.wordStat.words} words</span> 
-        and <span class="highlight">${event.detail.wordStat.characters} characters</span>.</p>`;
+    statElem.innerHTML = `<p><span class="highlight">${event.detail.wordStat.words} /100</span> 
+       </p>`;
 }
 
 inputText.addEventListener('count', render);
