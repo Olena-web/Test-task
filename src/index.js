@@ -7,16 +7,16 @@ function countNumber() {
     //const numberValue = number.value;
     number.addEventListener('input', (event) => {
         const value = event.target.value;
-        if (value.length > 2) {
-            number.innerHTML = maxCountWords;
-            console.log(maxCountWords);
-            return maxCountWords;
+        if (value.length > 0) {
+            let maxCount = value;
+            console.log(maxCount);
+            return maxCount;
         }
     });
 
 }
 countNumber();
-const maxCountWords = countNumber() || 100;
+let maxCountWords = countNumber();
 class WordCounter {
     constructor(inputText) {
         this.inputText = inputText;
@@ -57,7 +57,7 @@ const statElem = document.querySelector('#stat');
 
 new WordCounter(inputText);
 const render = (event) => {
-    statElem.innerHTML = `<p><span class="highlight">${event.detail.wordStat.words} /${maxCountWords}</span> 
+    statElem.innerHTML = `<p><span class="highlight">${event.detail.wordStat.words}</span> / <span class="highlight">${maxCountWords}</span> 
        </p>`;
 }
 
