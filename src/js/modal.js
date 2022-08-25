@@ -4,7 +4,6 @@ function addModal() {
     const modalBtn = document.querySelector('.hamburger');
     const closeBtn = document.querySelector('.close-button');
 
-    console.log(closeBtn);
 
     function toggleModal() {
         modal.classList.add('show-modal');
