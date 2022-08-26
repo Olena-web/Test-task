@@ -59,11 +59,23 @@ class WordCounter {
 
     }
     getWordStat(str) {
+        let arr = [];
         let matches = str.match(/\S+/g);
+
+        const test = /^(the|a|an)$/.test(str) ? 1 : 0;
+        console.log(test); // 👉️ true
+
+        const match = str.match(/^the$/gi) || str.match(/^a$/gi) || str.match(/^an$/gi);
+        console.log(match); // 👉️ ['hello']
+
+        const array = [...str.matchAll(test)];
+        // console.log(array); // 👉️ [hello]
+
+
         return {
-            characters: str.length,
             words: matches ? matches.length : 0,
         };
+
     }
 }
 const inputText = document.querySelector('#text');
@@ -72,7 +84,7 @@ const inputNumber = document.querySelector('#number');
 
 new WordCounter(inputText, inputNumber);
 const render = (event) => {
-    statElem.innerHTML = `<p><span class="highlight">${event.detail.wordStat.words}</span> / <span class="highlight">${event.detail.numberStat.maxCount}</span> 
+    statElem.innerHTML = `<p><span class="highlight">${event.detail.wordStat.words}</span> / <span class="highlight">100</span> 
        </p>`;
 }
 

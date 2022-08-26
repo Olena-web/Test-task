@@ -21,7 +21,7 @@
 #### Hamburger icon should open a popup with input and textarea. - done
 #### Create a JS class (strictly ES6 syntax) that will count the number of entered words,  - done
 #### words like "the", "a", "an" will not be taken into account (give the possibility to pass these exceptions as an array during initialization). 
-#### A single word has a space on both sides. Do not allow to enter all other signs or symbols (only letters and spaces).
+#### A single word has a space on both sides. Do not allow to enter all other signs or symbols (only letters and spaces). - done
 
 #### In the input tag, it is necessary to implement a change in the number of words that can be entered in the text area. If the maximum number of words is reached, prevent input into the textarea. 
 #### If at this time the number of words in the input is changed, then it should be processed, with a smaller number, extra words should be removed from the end. 
