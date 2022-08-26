@@ -15,33 +15,47 @@ function countNumber() {
     });
 
 }
-countNumber();
-let maxCountWords = countNumber();
 class WordCounter {
-    constructor(inputText) {
+    constructor(inputText, inputNumber) {
         this.inputText = inputText;
+        this.inputNumber = inputNumber;
 
         this.inputText.addEventListener('input', () => {
             this.count();
         });
+        this.inputNumber.addEventListener('input', () => {
+            this.countNumber();
+        }
+        );
 
     }
     count() {
         let wordStat = this.getWordStat(this.inputText.value.trim());
-        this.emitEvent(wordStat);
+        let numberStat = this.countNumber(this.inputNumber.value.trim());
+        this.emitEvent(wordStat, numberStat);
     }
 
-    emitEvent(wordStat) {
+    countNumber(str) {
+        if (str) {
+            let maxCount = str;
+            console.log(maxCount);
+            return maxCount;
+        }
+    }
+
+    emitEvent(wordStat, numberStat) {
         // Create count event
         let countEvent = new CustomEvent('count', {
             bubbles: true,
             cancelable: true,
             detail: {
-                wordStat
+                wordStat,
+                numberStat
             }
         });
         // dispatch the count event
         this.inputText.dispatchEvent(countEvent);
+        this.inputNumber.dispatchEvent(countEvent);
 
     }
     getWordStat(str) {
@@ -54,10 +68,11 @@ class WordCounter {
 }
 const inputText = document.querySelector('#text');
 const statElem = document.querySelector('#stat');
+const inputNumber = document.querySelector('#number');
 
-new WordCounter(inputText);
+new WordCounter(inputText, inputNumber);
 const render = (event) => {
-    statElem.innerHTML = `<p><span class="highlight">${event.detail.wordStat.words}</span> / <span class="highlight">${maxCountWords}</span> 
+    statElem.innerHTML = `<p><span class="highlight">${event.detail.wordStat.words}</span> / <span class="highlight">${event.detail.numberStat.maxCount}</span> 
        </p>`;
 }
 

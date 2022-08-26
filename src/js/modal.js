@@ -10,7 +10,6 @@ function addModal() {
     }
     function removeModal() {
         modal.classList.remove('show-modal');
-        console.log('remove');
     }
 
     modalBtn.addEventListener('click', toggleModal);
