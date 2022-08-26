@@ -68,12 +68,11 @@ class WordCounter {
         const match = str.match(/^the$/gi) || str.match(/^a$/gi) || str.match(/^an$/gi);
         console.log(match); // 👉️ ['hello']
 
-        const array = [...str.matchAll(test)];
-        // console.log(array); // 👉️ [hello]
-
+        let newArray = matches.filter(function (f) { return f !== 'the' && f !== 'a' && f !== 'an' });
+        console.log(newArray)
 
         return {
-            words: matches ? matches.length : 0,
+            words: newArray ? newArray.length : 0,
         };
 
     }
