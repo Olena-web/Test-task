@@ -35,15 +35,14 @@ const removeWords = (event) => {
     const allWords = Number(statElem.innerText.slice(0, -2));
     if (allWords > maxLength) {
         const countWords = allWords - maxLength;
-        inputText.addEventListener('keyup', (event) => {
-            event.target.value.slice(0, -`${countWords}`);
-        });
-    };
+        event.target.value.slice(0, -`${countWords}`);
+        //statElem.innerText = `${maxLength} / `;
+    }
 }
 
 inputText.addEventListener('keyup', preventInput);
 inputText.addEventListener('count', render);
-number.addEventListener('input', removeWords);
+inputText.addEventListener('keyup', removeWords);
 
 
 

@@ -14,7 +14,7 @@
 }
 
 .modal-content {
-	position: absolute;
+	position: relative;
 	top: 16%;
 	left: 33%;
 	transition: translate(-50%, -50%);
@@ -22,7 +22,7 @@
 	width: 85rem;
 	height: 79rem;
 	border-radius: 0.5rem;
-	font-size: 24px;
+	font-size: var(--font-size-modal);
 }
 .modal-header {
 	width: 100%;
@@ -57,7 +57,7 @@ form {
   display: flex;
   flex-direction: column;
   padding: 1.5rem 7.5rem 0 8rem;
-  font-size: 45px;
+  font-size: var(--font-size-form);
   margin-left: 1rem;
   color: var(--color-blue);
  #number {

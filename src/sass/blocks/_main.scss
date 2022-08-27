@@ -10,6 +10,11 @@
   --color-lightgray: rgb(211, 211, 211);
   --shadow: rgba(0, 0, 0, 0.25);
   --shadow-modal: rgba(0, 0, 0, 0.5);
+  --font-size-a: 40px;
+  --font-size-form: 45px;
+  --font-size-modal: 24px;
+  --font-size-h1: 238px;
+  --font-size-main-description: 56px;
 
 }
 
@@ -58,7 +63,7 @@ section {
     height: 447px;
     color: var(--color-dark);
     font-family: var(--font-bold);
-    font-size: 238px;
+    font-size: var(--font-size-h1);
     font-weight: 900;
     line-height: 255.7px;
     text-align: left;
@@ -72,7 +77,7 @@ section {
     overflow-y: hidden;
     color: var(--color-dark);
     font-family: var(--font-normal);
-    font-size: 56px;
+    font-size: var(--font-size-main-description);
     font-weight: 400;
     font-style: normal;
     letter-spacing: normal;

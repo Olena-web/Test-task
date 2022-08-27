@@ -1,4 +1,4 @@
-import { ARTICLES, CONJUNCTIONS, PREPOSITIONS } from './constants.js';
+import { exeptions } from './constants.js';
 
 export function countNumber() {
     const number = document.querySelector('#number');
@@ -42,7 +42,6 @@ export class WordCounter {
 
     getWordStat(str) {
         let matches = str.match(/\S+/g);
-        const exeptions = ARTICLES.concat(CONJUNCTIONS).concat(PREPOSITIONS);
         for (const element of exeptions) {
             let newArray = matches.filter(function (f) {
                 return f !== (element);

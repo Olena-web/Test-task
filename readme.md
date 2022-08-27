@@ -6,7 +6,7 @@
 #### On the portrait image should go to the top of the page and content after it
 #### The content must not contain a position absolute (only a logo can use it) - done
 #### Links to social networks should not be indexed by a search engine - done
-#### Colors, fonts, text sizes must be in variables
+#### Colors, fonts, text sizes must be in variables- done
 #### Icons must be in SVG and placed at the end of the document, in places of use they must be connected through the use tag
 #### Need to make a printable version where there will only be a title, text and a text version of the read more link like "Read more there: http://google.com/" (This should be implemented without extra text in the page and without using JS)
 
