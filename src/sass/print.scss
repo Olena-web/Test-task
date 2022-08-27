@@ -1,0 +1,74 @@
+ /* https://stackoverflow.com/questions/8994403/how-to-make-printable-version-of-a-webpage */
+ /* https://smallbusiness.chron.com/make-webpage-printable-47225.html */
+
+* { 
+    margin:0 auto;
+    background: transparent !important; 
+    color: black !important; 
+    text-shadow: none !important; 
+    filter:none !important;
+    -ms-filter: none !important; 
+  } /* Black prints faster: sanbeiji.com/archives/953 */
+   @page { 
+     size: A4; 
+  }
+   .hide-on-print {
+    display: none !important; 
+  }
+  .print-only { 
+    display: block !important; 
+  }
+     
+   
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    h1 {
+      display: block;
+      margin-top: 7rem;
+      text-align: center;
+      height: 250px;
+      font-family: var(--font-bold);
+      font-size: var(--font-size-h1);
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    .description {
+      display: block;
+      width: 1742px;
+      height: 151px;
+      overflow-y: hidden;
+      font-family: var(--font-normal);
+      font-size: var(--font-size-main-description);
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 90.84px;
+      text-align: left;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+    }
+    a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      font-family: var(--font-extra-bold);
+      font-size: var(--font-size-a);
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 62.68px;
+      text-align: center;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      }
+    a[href]:after {
+      margin-top: 2cm;
+      content: " there " attr(href) "";
+      }
+}

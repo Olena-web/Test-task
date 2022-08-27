@@ -27,8 +27,6 @@ body {
 header {
   width: 100%;
   display: flex;
-  
-  
 }
 main {
   padding: 0 4rem;
@@ -87,4 +85,8 @@ section {
     letter-spacing: normal;
     line-height: normal;
   }
+}
+
+.print-only {
+  display: none !important;
 }

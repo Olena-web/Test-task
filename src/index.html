@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Links to social networks should not be indexed by a search engine -->
     <meta name="robots" content="nofollow"> 
-    <link rel="stylesheet" href="css/style.min.css" />
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="css/style.min.css" media="screen"/>
+    <link rel="stylesheet" href="css/print.min.css" media="print"/>
+    
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <!-- for compiling JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/3.18.1/minified.js"></script>
@@ -15,13 +16,13 @@
     <title>Test-task</title>
 </head>
 <body>
-    <aside>
+    <aside class="hide-on-print">
         <div class="logo">
             <img src="assets/Logo.png" alt="logo" />
         </div>
     </aside>
     <main>
-        <header>
+        <header class="hide-on-print">
             <nav>
                 <ul class="navbar">
                     <li><a href="#">Home</a></li>
@@ -37,7 +38,7 @@
                   </div>
             </nav>
         </header>
-        <div class="design_1">
+        <div class="design_1 hide-on-print">
             <div class="circle">
                 <img src="assets/yellow-circle.svg" alt="yellow-circle">
             </div>
@@ -50,11 +51,12 @@
             <div class="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce iaculis vitae nulla quis egestas. Mauris eros diam, rutrum posuere velit sit amet Fusce piscing. consectetur adipiscing moter dose.
             </div>
-            <button class="button">
+            <button class="button hide-on-print">
                 <span><a href="http://google.com/">Read more</a></span>
             </button>
+            <span class="print-only"><a href="http://google.com/">Read more</a></span>
         </section>
-        <div class="modal">
+        <div class="modal hide-on-print">
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="close-button">
@@ -80,12 +82,12 @@
                 </div>
             </div>
         </div>
-        <div class="design_2">
+        <div class="design_2 hide-on-print">
             <div class="circle">
                 <img src="assets/grey-circle.svg" alt="grey-circle">
             </div>
         </div>
-        <footer>
+        <footer class="hide-on-print">
             <div class="social-media">
                 <ul>
                     <li><a href="#">

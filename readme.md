@@ -8,7 +8,7 @@
 #### Links to social networks should not be indexed by a search engine - done
 #### Colors, fonts, text sizes must be in variables- done
 #### Icons must be in SVG and placed at the end of the document, in places of use they must be connected through the use tag
-#### Need to make a printable version where there will only be a title, text and a text version of the read more link like "Read more there: http://google.com/" (This should be implemented without extra text in the page and without using JS)
+#### Need to make a printable version where there will only be a title, text and a text version of the read more link like "Read more there: http://google.com/" (This should be implemented without extra text in the page and without using JS) - done
 
 #### It will be a big plus to use SCSS/SASS  - done
 #### to also make a mobile version to your liking (images should be reduced for the mob version)
