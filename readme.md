@@ -23,6 +23,8 @@
 #### words like "the", "a", "an" will not be taken into account (give the possibility to pass these exceptions as an array during initialization). 
 #### A single word has a space on both sides. Do not allow to enter all other signs or symbols (only letters and spaces). - done
 
-#### In the input tag, it is necessary to implement a change in the number of words that can be entered in the text area. If the maximum number of words is reached, prevent input into the textarea. 
-#### If at this time the number of words in the input is changed, then it should be processed, with a smaller number, extra words should be removed from the end. 
+#### In the input tag, it is necessary to implement a change in the number of words that can be entered in the text area. - done 
+#### If the maximum number of words is reached, prevent input into the textarea.  - done
+#### If at this time the number of words in the input is changed, then it should be processed, - done
+#### with a smaller number, extra words should be removed from the end. 
 #### Configure babel to compile JS - done

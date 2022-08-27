@@ -14,14 +14,13 @@ export function countNumber() {
 
 }
 export class WordCounter {
-    constructor(inputText, inputNumber) {
+    constructor(inputText) {
         this.inputText = inputText;
         this.inputText.addEventListener('input', () => {
             this.count();
         });
-
-
     }
+
     count() {
         let wordStat = this.getWordStat(this.inputText.value.trim());
         this.emitEvent(wordStat);
