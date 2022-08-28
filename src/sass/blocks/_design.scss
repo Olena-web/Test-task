@@ -1,15 +1,32 @@
 .design_1 {
-  margin-top: 9.5rem;
-  margin-right: 11rem;
+  margin-top: 4.5rem;
+  margin-right: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   .circle {
-    margin-right: 28rem;
+    width: 73px;
+    height: 73px;
+    margin-right: 15.5rem;
+    img {
+      width: 100%;
+    }
+  }
+  .crosses {
+    width:314px;
+    img {
+      width: 100%;
+    }
   }
 }
 .design_2 {
-  margin-right: 37rem;
+  margin-right: 17.5rem;
   display: flex;
   flex-direction: row-reverse;
+  .circle {
+    width: 7.5rem;
+    img {
+      width: 100%;
+    }
+  }
 }

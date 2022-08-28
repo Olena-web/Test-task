@@ -10,18 +10,17 @@
   --color-lightgray: rgb(211, 211, 211);
   --shadow: rgba(0, 0, 0, 0.25);
   --shadow-modal: rgba(0, 0, 0, 0.5);
-  --font-size-a: 40px;
-  --font-size-form: 45px;
+  --font-size-a: 23px;
+  --font-size-form: 24px;
   --font-size-modal: 24px;
-  --font-size-h1: 238px;
-  --font-size-main-description: 56px;
+  --font-size-h1: 129px;
+  --font-size-main-description: 30px;
 
 }
 
 body {
-  display: grid;
-  grid-template-columns: 1400px 1fr;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
 
 }
 header {
@@ -29,7 +28,7 @@ header {
   display: flex;
 }
 main {
-  padding: 0 4rem;
+  padding: 0 0.5rem;
   margin-right: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -39,39 +38,44 @@ main {
   
 }
 aside {
-  min-width: 800px;
   height: 100vh;
-  background-image: url(./../assets/Image.png);
+  width: 759px;
+  background-image: url(./../assets/aside.webp);
   background-repeat: no-repeat;
   background-position: left 96% bottom;
+  background-size: cover;
   
   .logo {
     position: absolute;
-    top: 7rem;
-    left: 11rem;
+    top: 4rem;
+    left: 6rem;
+    width: 150px;
+    img {
+      width: 100%;
+    }
   }
   
 }
 section {
   display: flex;
   flex-direction: column;
+  margin-left: 2rem;
   h1 {
-    margin-top: 7rem;
-    width: 1400px;
-    height: 447px;
+    margin-top: 4rem;
+    width: 754px;
+    height: 223px;
     color: var(--color-dark);
     font-family: var(--font-bold);
     font-size: var(--font-size-h1);
     font-weight: 900;
-    line-height: 255.7px;
+    line-height: 125px;
     text-align: left;
     text-transform: uppercase;
   }
   .description {
-    margin-top: 5rem;
-    margin-left: 1.5rem;
-    width: 1742px;
-    height: 151px;
+    margin-top: 3.3rem;
+    width: 976px;
+    height: 100px;
     overflow-y: hidden;
     color: var(--color-dark);
     font-family: var(--font-normal);
