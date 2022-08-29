@@ -15,13 +15,11 @@
   --font-size-modal: 24px;
   --font-size-h1: 129px;
   --font-size-main-description: 30px;
-
 }
 
 body {
   display: flex;
   flex-direction: row;
-
 }
 header {
   width: 100%;
@@ -29,13 +27,12 @@ header {
 }
 main {
   padding: 0 0.5rem;
-  margin-right: 1.5rem;
   display: flex;
   flex-direction: column;
   background-image: url(./../assets/Corner.svg),  url(./../assets/Dots.svg), url(./../assets/Triangle.svg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: right 444% top 201%,top 163% left 32%,right 863% top 183%;
-  
+  background-size: 120%, 50%, 97%;
 }
 aside {
   height: 100vh;
