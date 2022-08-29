@@ -1,7 +1,7 @@
 :root {
-  --font-normal:  Poppins, sans-serif;
-  --font-bold:    "Poppins - Black", sans-serif;
-  --font-extra-bold: "Poppins - Extra Bold", sans-serif;
+  --font-normal:  'Poppins';
+  --font-bold:    "Poppins-Black";
+  --font-extra-bold: "Poppins-ExtraBold";
   --color-dark:  #000928;
   --color-light: #ffffff;
   --color-blue: #2372d5;
@@ -13,7 +13,7 @@
   --font-size-a: 23px;
   --font-size-form: 24px;
   --font-size-modal: 24px;
-  --font-size-h1: 129px;
+  --font-size-h1: 142px;
   --font-size-main-description: 30px;
 }
 
@@ -65,7 +65,7 @@ section {
     font-family: var(--font-bold);
     font-size: var(--font-size-h1);
     font-weight: 900;
-    line-height: 125px;
+    line-height: 139px;
     text-align: left;
     text-transform: uppercase;
   }
