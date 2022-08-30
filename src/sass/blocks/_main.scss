@@ -20,6 +20,14 @@
 body {
   display: flex;
   flex-direction: row;
+  background-image: url(./../assets/Corner.svg);
+  background-repeat: no-repeat;
+  background-position: right -50% top -313%;
+  background-size: 49%;
+  background-image:  url(./../assets/Dots.svg), url(./../assets/Triangle.svg);
+  background-repeat:  no-repeat, no-repeat;
+  background-position: top 168% left 47%,left 465% top 235%;
+  background-size: 50%,109%;
 }
 header {
   width: 100%;
@@ -34,10 +42,10 @@ main {
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  background-image: url(./../assets/Corner.svg),  url(./../assets/Dots.svg), url(./../assets/Triangle.svg);
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: right 444% top 201%,top 168% left 47%,left 465% top 235%;
-  background-size: 120%,50%,109%;
+  // background-image:  url(./../assets/Dots.svg), url(./../assets/Triangle.svg);
+  // background-repeat:  no-repeat, no-repeat;
+  // background-position: top 168% left 47%,left 465% top 235%;
+  // background-size: 50%,109%;
 }
 aside {
   position: relative;
