@@ -1,8 +1,10 @@
 .button {
-  margin-top: 1.5rem;
+  position: relative;
+  left: -5rem;
+  margin-top: 2rem;
   width: 233px;
-  height: 58px;
-  padding:20px 0 0 0 ;
+  height: 55px;
+  padding: 7px 0 6px 0 ;
   background-color: var(--color-blue);
   cursor: pointer;
   &:active {

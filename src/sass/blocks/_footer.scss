@@ -5,14 +5,16 @@ footer {
   
   }
 .social-media ul {
-  margin-top: 5rem;
+  position: relative;
+  left: 22rem;
+  margin-top: 4.7rem;
   margin-left: 3.5rem;
   list-style-type: none;
   display:flex;
   justify-content:space-around;
  
   li {
-    margin-right: 0.45rem;
+    width: 73px;
     cursor:pointer;
     &:hover {
       filter: invert(15%) sepia(100%) saturate(5130%) hue-rotate(334deg) brightness(88%) contrast(104%);

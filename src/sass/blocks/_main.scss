@@ -18,51 +18,32 @@
 }
 
 body {
+  margin:0 auto;
   display: flex;
   flex-direction: row;
-  background-image: url(./../assets/Corner.svg);
-  background-repeat: no-repeat;
-  background-position: right -50% top -313%;
-  background-size: 49%;
-  background-image:  url(./../assets/Dots.svg), url(./../assets/Triangle.svg);
-  background-repeat:  no-repeat, no-repeat;
-  background-position: top 168% left 47%,left 465% top 235%;
-  background-size: 50%,109%;
+  background-image: url(./../assets/Corner.svg),  url(./../assets/Dots.svg), url(./../assets/Triangle.svg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: right 444% top 201%,top 163% left 32%,right 863% top 183%;
+  background-size: 120%, 50%, 97%;
 }
 header {
   width: 100%;
   display: flex;
 }
 main {
-  position: relative;
-  z-index: 2;
-  margin-right: 0;
-  left: -9rem;
-
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  // background-image:  url(./../assets/Dots.svg), url(./../assets/Triangle.svg);
-  // background-repeat:  no-repeat, no-repeat;
-  // background-position: top 168% left 47%,left 465% top 235%;
-  // background-size: 50%,109%;
+ 
 }
 aside {
-  position: relative;
-  z-index: 5;
-  height: 100vh;
-  width: 759px;
   margin-left: 0;
-  img {
-    position: relative;
-    z-index: 10;
-    width: 136%;
-    left: -16.5rem;
-  }
-  // background-image: url(./../assets/aside.webp);
-  // background-repeat: no-repeat;
-  // background-position: left 96% bottom;
-  // background-size: cover;
+  height: 100vh;
+  width: 755px;
+  background-image: url(./../assets/aside.webp);
+  background-repeat: no-repeat;
+  background-position: left 95% bottom;
+  background-size: cover;
   
   .logo {
     position: absolute;
@@ -80,7 +61,8 @@ section {
   flex-direction: column;
   margin-left: 2rem;
   h1 {
-    margin-top: 4rem;
+    margin-top: 3.7rem;
+    margin-left: -6rem;
     width: 754px;
     height: 223px;
     color: var(--color-dark);
@@ -92,21 +74,21 @@ section {
     text-transform: uppercase;
   }
   .description {
-    margin-top: 3.3rem;
-    width: 976px;
+    position: relative;
+    left: -5rem;
+    margin-top: 3.5rem;
+    width: 983px;
     height: 100px;
     overflow-y: hidden;
     color: var(--color-dark);
     font-family: var(--font-normal);
     font-size: var(--font-size-main-description);
     font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 90.84px;
+    line-height: 3rem;
     text-align: left;
     font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
+    letter-spacing: 0.02rem;
+    
   }
 }
 

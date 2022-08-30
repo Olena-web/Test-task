@@ -16,7 +16,7 @@
 .modal-content {
 	position: relative;
 	top: 16%;
-	left: 33%;
+	left: 2.1%;
 	transition: translate(-50%, -50%);
 	background-color: var(--color-light);
 	width: 46rem;
@@ -30,11 +30,11 @@
 	background-color: var(--color-blue);
 	.envelope {
 		position: relative;
+		margin:0;
 		top: -2.5rem;
-		left: 18.5rem;
+		left: 18rem;
 		width: 155px;
-    	pointer-events: none;
-		img {
+    	img {
 			width: 100%;
 		}
 	}
@@ -62,7 +62,7 @@
 form {
   display: flex;
   flex-direction: column;
-  padding: 1rem 3.5rem 0 4rem;
+  padding: 1rem 4rem 0 4rem;
   font-size: var(--font-size-form);
   margin-left: 1rem;
   color: var(--color-blue);
@@ -79,12 +79,15 @@ form {
     border: 3px solid var(--color-blue);
     }
   .count {
-    margin-left: 33rem;
-    margin-top: 1rem;
+    margin-left: 32.5rem;
+    margin-top: 0.5rem;
   }
   #stat {
     color: var(--color-dark);
     }
+	label {
+		margin: 0 0 0.5rem 0;
+	}
  }
 
 
@@ -94,10 +97,4 @@ form {
 	visibility: visible;
 	transform: scale(1.0);
 	transition: visibility 0s linear 0s, opacity 0.25s 0s,transform 0.25s; 
-}
-
-.error {
-	color: var(--color-red);
-  border: 3px solid var(--color-red);
- 
 }
