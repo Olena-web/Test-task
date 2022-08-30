@@ -26,5 +26,5 @@
 #### In the input tag, it is necessary to implement a change in the number of words that can be entered in the text area. - done 
 #### If the maximum number of words is reached, prevent input into the textarea.  - done
 #### If at this time the number of words in the input is changed, then it should be processed, - done
-#### with a smaller number, extra words should be removed from the end. 
+#### with a smaller number, extra words should be removed from the end.  - done
 #### Configure babel to compile JS - done
