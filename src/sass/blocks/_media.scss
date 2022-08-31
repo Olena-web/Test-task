@@ -6,7 +6,7 @@
   }
   aside {
     width: 100vw;
-    height: 70vh;
+    height: 51vh;
     background-position: right top;
   }
   .logo {
@@ -14,12 +14,8 @@
     top: 4rem;
     left: 6rem;
   }
-  header {
-    position: relative;
-    top: -28rem;
-  }
   nav {
-    margin-top: -49rem;
+    margin-top: -7rem;
     margin-left: 4rem;
     
   .navbar {
@@ -50,4 +46,142 @@
       left: 0;
     }
   }
+  .design_1 {
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 446px) and (orientation:portrait) {
+  body {
+    background-position: top 46% left 171%,top 162% left 52%,top 164% right -100%;
+  }
+  aside {
+    height: 41vh;
+    background-image: url(./../assets/aside-min.webp);
+    .logo {
+      top: 1.2rem;
+      width: 100px;
+      left: 2rem;
+    }
+    }
+  main {
+    width: 100%;
+    header {
+      top: 0;
+      nav {
+        margin-top: -9rem;
+        margin-left: 0rem;
+        flex-direction: column;
+        justify-content: space-between;
+       .navbar {
+          margin-right: -1rem;
+          gap: 0rem;
+          flex-direction: column;
+          justify-content: center;
+          a {
+            font-size: var( --font-size-a-small);
+          }
+        }
+    }
+    .hamburger {
+      width:31px;
+      height: 31px;
+      span {
+        height: 5px;
+      }
+    }
+  }
+    section {
+      margin-left: 0;
+      h1 {
+        font-size: var(--font-size-h1-min);
+        line-height: unset;
+        margin-top: unset;
+        width: unset;
+        height: unset;
+      }
+      .description {
+        font-size: var(--font-size-main-description-min);
+        line-height: unset;
+        margin-top: unset;
+        width: 315px;
+        height: 45px;
+      }
+      .button {
+        margin-top: 0;
+        width: 155px;
+        margin-top: 1;
+        height: 43px;
+        a {
+          font-size: var( --font-size-a-small);
+        }
+        
+        }
+    }
+    .design_1 {
+      margin: 1.5rem 0 0 0;
+      align-items: flex-start;
+      .circle {
+        width:35px;
+        margin-right: 5rem;
+        height: unset;
+      }
+      .crosses {
+        width: 163px;
+      }
+    }
+    .design_2 {
+      width: 40%;
+      margin: 0 0 0 11rem;
+      .circle {
+        width:3.5rem;
+      }
+    }
+    footer {
+      margin: 1.5rem 0 0 0;
+      flex-direction: column;
+      .social-media {
+        margin: 0;
+      
+      ul {
+        margin-left: unset;
+        margin-top: unset;
+        left: 0rem;
+        width: fit-content;
+        li {
+          margin: 0 0 0 0;
+        }
+      }
+      }
+    }
+}
+.modal-content {
+  width: 19rem;
+  height: 21rem;
+  .modal-header {
+    height: 5rem;
+    .envelope {
+      left: 6rem;
+     width: 105px;
+    }
+    .close-button{
+      width:1.5rem
+    }
+  }
+  form {
+    margin-left: 0;
+    padding: 0.5rem 1rem 0 1rem;
+    font-size: var(--font-size-a-small);
+    .count {
+      margin-left: 11rem;
+    }
+    #number {
+      height: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    #text {
+      height: 7rem;
+    }
+  }
+}
 }
