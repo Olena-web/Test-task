@@ -1,6 +1,8 @@
 @media screen and (max-width:1080px) and (orientation:portrait) {
   body {
     flex-direction: column;
+    background-position: top 64% left 171%, top 134% left, top 129% right -100% ;
+    background-size: 60%,67%,117%;
   }
   aside {
     width: 100%;
@@ -15,11 +17,10 @@
   header {
     position: relative;
     top: -28rem;
-    left: 16rem;
   }
   nav {
     margin-top: -49rem;
-    margin-left: -5rem;
+    margin-left: 4rem;
     
   .navbar {
     margin-right: 7rem;
@@ -40,6 +41,15 @@
   .social-media {
     ul {
       margin-left: -3.5rem;
+    }
+  }
+  section {
+    h1 {
+      margin-left: 0;
+    }
+    .description,
+    .button {
+      left: 0;
     }
   }
 }

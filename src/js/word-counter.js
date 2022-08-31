@@ -33,7 +33,6 @@ export class WordCounter {
             cancelable: true,
             detail: {
                 wordStat,
-
             }
         });
         // dispatch the count event
