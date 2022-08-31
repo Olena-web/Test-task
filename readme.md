@@ -1,6 +1,7 @@
 #### deploy https://olena-web.github.io/Test-task/src/index.html
 
-#### screenshotshttps://github.com/Olena-web/Test-task/blob/main/src/assets/screenshots/1.png, https://github.com/Olena-web/Test-task/blob/main/src/assets/screenshots/2.png
+#### screenshotshttps: github.com/Olena-web/Test-task/blob/main/src/assets/screenshots/1.png, 
+https://github.com/Olena-web/Test-task/blob/main/src/assets/screenshots/2.png
 
 ### HTML/CSS requirements
 
