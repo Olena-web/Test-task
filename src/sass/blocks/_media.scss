@@ -185,3 +185,85 @@
   }
 }
 }
+
+@media screen and (max-width:1024px) and (orientation: landscape){
+ 
+  body {
+    background-position: left 149% top -38%,top 130% left 69%,right top 285%;
+    background-size: 42%,24%,83%;
+    
+  }
+  main {
+    width: 50%;
+    margin: 0;
+    .design_1{
+      margin-top: 1.5rem;
+      margin-right: 0rem;
+      .circle{
+        margin-right: 7.5rem;
+        margin-top: 1.5rem;
+        width: 55px;
+      }
+      .crosses {
+        width: 276px;
+      }
+    }
+    h1 {
+      margin-top: 1rem;
+      height: 185px;
+      font-size: 90px;
+      width: 100%;
+      line-height: 100px;
+      margin-left: 1rem;
+    }
+    .description {
+      margin-top: 0rem;
+      left: 0;
+      width: 517px;
+      height: 85px;
+      font-size: 24px;
+    }
+    .button {
+      margin-top: 2rem;
+      left: 1rem;
+     
+    }
+    .design_2{
+      margin-right: 8rem;
+      .circle {
+        width: 4.5rem;
+      }
+    }
+    .social-media ul {
+      left: 6rem;
+      margin-top: 1.7rem;
+    }
+  }
+  aside {
+    width: 40%;
+  }
+  nav {
+    margin-top: 2rem;
+    .navbar {
+      margin-right: 3rem;
+      gap: 1.5rem;
+      height: 14px;
+      a {
+        font-size: 20px;
+        line-height: 20px;
+       }
+    }
+  }
+  .modal-content {
+    top:6%;
+    width: 46rem;
+    height: 41rem;
+    .modal-header{
+      height: 8rem;
+      .envelope {
+        width: 138px;
+      }
+    }
+
+  }
+}
